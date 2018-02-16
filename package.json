@@ -1,0 +1,26 @@
+{
+  "name": "techniques-de-judo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjcandel/techniques-de-judo.git"
+  },
+  "author": "Sophie Candel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sjcandel/techniques-de-judo/issues"
+  },
+  "homepage": "https://github.com/sjcandel/techniques-de-judo#readme",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-rename": "latest",
+    "gulp-csso": "latest",
+    "gulp-less": "latest",
+    "gulp-csscomb": "latest",
+    "gulp-cssbeautify": "latest",
+    "gulp-autoprefixer": "latest"
+  }
+}
