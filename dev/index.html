@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Techniques de Judo</title>
+
+    <!-- AngularJs -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+    <script src="bundle.js"></script>
+
+    <!--Jquery JS-->
+    <script src="//code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!--Style-->
+    <link rel="stylesheet" href="main.css" media="screen">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" media="screen">
+</head>
+
+<body class="flex-container">
+    <nav class="flex-1 p-20 text-white">
+        <ul>
+            <li><a ui-sref="home" class="text-l weight-700">Accueil</a></li>
+            <li>
+                <span class="text-l weight-700">Ne-waza</span>
+                <ul>
+                    <li><a ui-sref="immobilisations">Immobilisations</a></li>
+                    <li><a ui-sref="retournements">Retournements</a></li>
+                    <li><a ui-sref="etranglements">Etranglements</a></li>
+                    <li><a ui-sref="cles-de-bras">Clés de bras</a></li>
+                </ul>
+            </li>
+            <li>
+                <span class="text-l weight-700">Tachi-waza</span>
+                <ul>
+                    <li><a ui-sref="techniques-de-bras">Techniques de bras</a></li>
+                    <li><a ui-sref="techniques-de-hanches">Techniques de hanches</a></li>
+                    <li><a ui-sref="techniques-de-jambes">Techniques de jambes</a></li>
+                    <li><a ui-sref="techniques-de-sacrifices">Techniques de sacrifices</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul>
+            <li>Contact</li>
+            <li>À propos</li>
+            <li>Mentions légales</li>
+        </ul>
+    </nav>
+
+    <ui-view class="flex-4 p-20"></ui-view>
+
+</body>
+
+</html>

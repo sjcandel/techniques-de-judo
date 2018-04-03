@@ -3,24 +3,29 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sjcandel/techniques-de-judo.git"
   },
-  "author": "Sophie Candel",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sjcandel/techniques-de-judo/issues"
   },
   "homepage": "https://github.com/sjcandel/techniques-de-judo#readme",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.3",
+    "angular": "^1.6.6"
+  },
   "devDependencies": {
-    "gulp": "latest",
-    "gulp-load-plugins": "latest",
-    "gulp-rename": "latest",
-    "gulp-csso": "latest",
-    "gulp-less": "latest",
-    "gulp-csscomb": "latest",
-    "gulp-cssbeautify": "latest",
-    "gulp-autoprefixer": "latest"
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-sass": "^3.1.0",
+    "http-server": "^0.11.1"
   }
 }

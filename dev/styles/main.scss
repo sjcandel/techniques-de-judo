@@ -1,0 +1,74 @@
+// Utilities
+@import "variables";
+@import "mixins";
+@import "reset";
+
+// Structure
+@import "flexbox";
+@import "layout";
+
+// Components
+@import "colors";
+@import "forms";
+@import "typos";
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box !important;
+}
+
+body {
+  height: 100vh !important;
+  color: blue;
+}
+
+nav {
+  background-color: #f39c12;
+}
+
+.videoGrid {
+  .videoGrid__elt {
+    width: 21%;
+    position: relative;
+    @media screen and (max-width: $width-md) {
+      width: 28%;
+    }
+    @media screen and (max-width: $width-xl) {
+      width: 25%;
+    }
+    @media screen and (max-width: $width-lg) {
+      width: 41%;
+    }
+    // @media screen and (max-width: $width-sm) {
+    //     width: 41%;
+    // }
+    @media screen and (max-width: $width-xs) {
+      width: 90%;
+    }
+
+    .videoGrid__img {
+      position: relative;
+
+      &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: calc((1 / 1.6) * 100%);
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
