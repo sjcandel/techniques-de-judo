@@ -19,13 +19,7 @@
 }
 
 body {
-  height: 100vh !important;
-}
-
-.separator {
-  height: 2px;
-  border-top: solid 1px $color-grey1;
-  margin: 20px 0 20px 0;
+  min-height: 100vh !important;
 }
 
 nav {
@@ -72,7 +66,7 @@ nav {
         display: block;
         content: "";
         width: 100%;
-        padding-top: calc((1 / 1.6) * 100%);
+        padding-top: calc((1 / 1.5) * 100%);
       }
       img {
         width: 100%;
