@@ -20,11 +20,27 @@
 
 body {
   height: 100vh !important;
-  color: blue;
+}
+
+.separator {
+  height: 2px;
+  border-top: solid 1px $color-grey1;
+  margin: 20px 0 20px 0;
 }
 
 nav {
-  background-color: #f39c12;
+  background-color: $color-orange;
+  line-height: 1.2em;
+  .separator {
+    border-top: solid 1px white !important;
+  }
+  ul,
+  .separator {
+    margin-left: 40%;
+    li ul {
+      margin-left: 0;
+    }
+  }
 }
 
 .videoGrid {
@@ -46,7 +62,9 @@ nav {
     @media screen and (max-width: $width-xs) {
       width: 90%;
     }
-
+    p {
+      font-size: 1.2em;
+    }
     .videoGrid__img {
       position: relative;
 

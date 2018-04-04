@@ -1,21 +1,14 @@
-<h1 class="text-grey1 text-xl uppercase weight-700">Immobilisations</h1>
+<h1 class="text-grey2 text-xxl uppercase weight-700">Immobilisations</h1>
+<h2 class="subtitle text-xl p-l-40">osae-komi-waza</h2>
 
-<div class="m-40">
+<div class="m-y-40">
     <p>{{selectedVideo.titre}}</p>
     <p>{{selectedVideo.url}}</p>
 </div>
 
 
-<!-- <ul>
-    <li ng-repeat="v in videos | filter: {categorie: 'immobilisation'}" ng-click="showDetails(v)">
-        <span>{{v.titre}}</span>
-        <img ng-src="{{v.poster}}" style="height: 100px;">
-    </li>
-</ul> -->
-
-
 <div class="videoGrid flex-container">
-    <a class="videoGrid__elt m-x-15 m-b-40" ng-repeat="v in videos" ng-click="showDetails(v)">
+    <a class="videoGrid__elt m-x-15 m-b-40" ng-repeat="v in videos | filter: {categorie: 'immobilisation'}" ng-click="showDetails(v)">
         <div class="videoGrid__img">
             <img ng-src="{{v.poster}}">
         </div>

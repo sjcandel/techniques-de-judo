@@ -20,29 +20,48 @@
 </head>
 
 <body class="flex-container">
-    <nav class="flex-1 p-20 text-white">
+    <nav class="flex-1 p-40 text-white">
         <ul>
-            <li><a ui-sref="home" class="text-l weight-700">Accueil</a></li>
-            <li>
-                <span class="text-l weight-700">Ne-waza</span>
+            <li class="m-b-30">
+                <a ui-sref="home" class="text-l weight-700">Accueil</a>
+            </li>
+            <li class="m-b-30">
+                <span class="text-l weight-700">Judo au sol</span>
                 <ul>
-                    <li><a ui-sref="immobilisations">Immobilisations</a></li>
-                    <li><a ui-sref="retournements">Retournements</a></li>
-                    <li><a ui-sref="etranglements">Etranglements</a></li>
-                    <li><a ui-sref="cles-de-bras">Clés de bras</a></li>
+                    <li>
+                        <a ui-sref="immobilisations">Immobilisations</a>
+                    </li>
+                    <li>
+                        <a ui-sref="retournements">Retournements</a>
+                    </li>
+                    <li>
+                        <a ui-sref="etranglements">Etranglements</a>
+                    </li>
+                    <li>
+                        <a ui-sref="cles-de-bras">Clés de bras</a>
+                    </li>
                 </ul>
             </li>
-            <li>
-                <span class="text-l weight-700">Tachi-waza</span>
+            <li class="m-b-30">
+                <span class="text-l weight-700">Judo debout</span>
                 <ul>
-                    <li><a ui-sref="techniques-de-bras">Techniques de bras</a></li>
-                    <li><a ui-sref="techniques-de-hanches">Techniques de hanches</a></li>
-                    <li><a ui-sref="techniques-de-jambes">Techniques de jambes</a></li>
-                    <li><a ui-sref="techniques-de-sacrifices">Techniques de sacrifices</a></li>
+                    <li>
+                        <a ui-sref="techniques-de-bras">Techniques de bras</a>
+                    </li>
+                    <li>
+                        <a ui-sref="techniques-de-hanches">Techniques de hanche</a>
+                    </li>
+                    <li>
+                        <a ui-sref="techniques-de-jambes">Techniques de jambes</a>
+                    </li>
+                    <li>
+                        <a ui-sref="techniques-de-sacrifices">Techniques de sacrifice</a>
+                    </li>
                 </ul>
             </li>
         </ul>
 
+        <div class="separator"></div>
         <ul>
             <li>Contact</li>
             <li>À propos</li>
@@ -50,7 +69,7 @@
         </ul>
     </nav>
 
-    <ui-view class="flex-4 p-20"></ui-view>
+    <ui-view class="flex-4 p-40"></ui-view>
 
 </body>
 
