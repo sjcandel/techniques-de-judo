@@ -22,17 +22,75 @@ body {
   min-height: 100vh !important;
 }
 
+// .desktop {
+//   @media screen and (max-width: $width-sm) {
+//     display: none;
+//   }
+// }
+// .mobile {
+//   @media screen and (min-width: $width-sm) {
+//     display: none;
+//   }
+// }
+
+.mainContainer {
+  @media screen and (max-width: $width-md) {
+    padding: 20px !important;
+  }
+}
+
 nav {
   background-color: $color-orange;
   line-height: 1.2em;
+  transition: ease 0.5s;
   .separator {
     border-top: solid 1px white !important;
   }
   ul,
   .separator {
-    margin-left: 40%;
+    margin-left: 20%;
+    @media screen and (min-width: $width-xl) {
+      margin-left: 40%;
+    }
+    @media screen and (max-width: $width-lg) {
+      margin-left: 0;
+    }
     li ul {
       margin-left: 0;
+    }
+  }
+  @media screen and (max-width: $width-sm) {
+    position: fixed;
+    left: -80%;
+    z-index: 10;
+    width: 80% !important;
+    min-height: 100vh;
+  }
+}
+
+#open-menu,
+#close-menu {
+  position: fixed;
+  right: 10px;
+  top: 20px;
+  font-size: 2em;
+  @media screen and (min-width: $width-sm) {
+    display: none;
+  }
+}
+
+#close-menu {
+  display: none;
+}
+
+.playerContainer {
+  @media screen and (max-width: $width-md) {
+    flex-direction: column;
+  }
+  .playerContainer__description {
+    @media screen and (max-width: $width-md) {
+      padding: 0 !important;
+      margin-top: 20px;
     }
   }
 }
@@ -50,17 +108,18 @@ nav {
     @media screen and (max-width: $width-lg) {
       width: 41%;
     }
-    // @media screen and (max-width: $width-sm) {
-    //     width: 41%;
-    // }
+    @media screen and (max-width: $width-sm) {
+      width: 45%;
+    }
     @media screen and (max-width: $width-xs) {
-      width: 90%;
+      width: 100%;
     }
     p {
       font-size: 1.2em;
     }
     .videoGrid__img {
       position: relative;
+      overflow: hidden;
 
       &:before {
         display: block;
@@ -77,6 +136,12 @@ nav {
         left: 0;
         right: 0;
         bottom: 0;
+      }
+      &:hover {
+        img {
+          transform: scale(1.1);
+          transition: ease 0.5s;
+        }
       }
     }
     &:hover {

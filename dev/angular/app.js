@@ -11,7 +11,7 @@ app.config([
     $urlRouterProvider.otherwise("home");
     $stateProvider
       .state("home", {
-        url: "/",
+        url: "",
         templateUrl: "views/index.html",
         controller: "main"
       })
