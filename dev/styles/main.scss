@@ -49,7 +49,7 @@ nav {
   ul,
   .separator {
     margin-left: 20%;
-    @media screen and (min-width: $width-xl) {
+    @media screen and (min-width: 1441px) {
       margin-left: 40%;
     }
     @media screen and (max-width: $width-lg) {
@@ -84,11 +84,11 @@ nav {
 }
 
 .playerContainer {
-  @media screen and (max-width: $width-md) {
+  @media screen and (max-width: 1230px) {
     flex-direction: column;
   }
   .playerContainer__description {
-    @media screen and (max-width: $width-md) {
+    @media screen and (max-width: 1230px) {
       padding: 0 !important;
       margin-top: 20px;
     }
@@ -97,21 +97,21 @@ nav {
 
 .videoGrid {
   .videoGrid__elt {
-    width: 21%;
+    width: 30%;
     position: relative;
-    @media screen and (max-width: $width-md) {
+    @media screen and (max-width: 1325px) {
+      width: 29%;
+    }
+    @media screen and (max-width: 1065px) {
       width: 28%;
     }
-    @media screen and (max-width: $width-xl) {
-      width: 25%;
+    @media screen and (max-width: 900px) {
+      width: 44%;
     }
-    @media screen and (max-width: $width-lg) {
-      width: 41%;
+    @media screen and (max-width: 540px) {
+      width: 43%;
     }
-    @media screen and (max-width: $width-sm) {
-      width: 45%;
-    }
-    @media screen and (max-width: $width-xs) {
+    @media screen and (max-width: 470px) {
       width: 100%;
     }
     p {

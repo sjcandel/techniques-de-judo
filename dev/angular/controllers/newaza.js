@@ -29,7 +29,8 @@ app.controller("newaza", [
         niveau: "blanche",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
-        url: "https://www.youtube.com/embed/Mgfe5tIwOj0",
+        url:
+          "https://player.vimeo.com/video/24396879?autoplay=1&title=0&byline=0&portrait=0",
         poster: "sources/img/img.jpg"
       },
       {
@@ -38,7 +39,8 @@ app.controller("newaza", [
         niveau: "jaune",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
-        url: "https://www.youtube.com/embed/wfWIs2gFTAM",
+        url:
+          "https://player.vimeo.com/video/89357746?autoplay=1&color=ffffff&title=0&byline=0&portrait=0",
         poster: "sources/img/img.jpg"
       },
       {
@@ -47,7 +49,8 @@ app.controller("newaza", [
         niveau: "blanche",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
-        url: "https://youtu.be/embed/wWB85dpJiTo",
+        url:
+          "https://player.vimeo.com/video/24396879?autoplay=1&title=0&byline=0&portrait=0",
         poster: "sources/img/img.jpg"
       },
       {
@@ -56,7 +59,8 @@ app.controller("newaza", [
         niveau: "blanche",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
-        url: "https://youtu.be/embed/wWB85dpJiTo",
+        url:
+          "https://player.vimeo.com/video/24396879?autoplay=1&title=0&byline=0&portrait=0",
         poster: "sources/img/img.jpg"
       },
       {
@@ -65,7 +69,8 @@ app.controller("newaza", [
         niveau: "blanche",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
-        url: "https://youtu.be/embed/wWB85dpJiTo",
+        url:
+          "https://player.vimeo.com/video/24396879?autoplay=1&title=0&byline=0&portrait=0",
         poster: "sources/img/img.jpg"
       },
       {
@@ -74,7 +79,8 @@ app.controller("newaza", [
         niveau: "jaune",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
-        url: "https://youtu.be/embed/wWB85dpJiTo",
+        url:
+          "https://player.vimeo.com/video/24396879?autoplay=1&title=0&byline=0&portrait=0",
         poster: "sources/img/img.jpg"
       },
       {
@@ -83,7 +89,8 @@ app.controller("newaza", [
         niveau: "jaune",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
-        url: "https://youtu.be/embed/wWB85dpJiTo",
+        url:
+          "https://player.vimeo.com/video/24396879?autoplay=1&title=0&byline=0&portrait=0",
         poster: "sources/img/img.jpg"
       }
     ];
@@ -92,6 +99,13 @@ app.controller("newaza", [
 
     $scope.showDetails = function(video) {
       $scope.selectedVideo = video;
+      $("html, body").animate(
+        {
+          scrollTop: 0
+        },
+        600
+      );
+      return false;
     };
   }
 ]);
