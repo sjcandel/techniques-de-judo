@@ -18,22 +18,22 @@ app.config([
       .state("immobilisations", {
         url: "/immobilisations",
         templateUrl: "views/ne-waza/immobilisations.html",
-        controller: "newaza"
+        controller: "immobilisations"
       })
       .state("retournements", {
         url: "/retournements",
         templateUrl: "views/ne-waza/retournements.html",
-        controller: "newaza"
+        controller: "retournements"
       })
       .state("etranglements", {
         url: "/etranglements",
         templateUrl: "views/ne-waza/etranglements.html",
-        controller: "newaza"
+        controller: "etranglements"
       })
       .state("cles-de-bras", {
         url: "/cles-de-bras",
         templateUrl: "views/ne-waza/cles-de-bras.html",
-        controller: "newaza"
+        controller: "cles"
       })
       .state("techniques-de-bras", {
         url: "/techniques-de-bras",
@@ -53,6 +53,11 @@ app.config([
       .state("techniques-de-sacrifices", {
         url: "/techniques-de-sacrifices",
         templateUrl: "views/tachi-waza/techniques-de-sacrifices.html",
+        controller: "main"
+      })
+      .state("contact", {
+        url: "/contact",
+        templateUrl: "views/contact.html",
         controller: "main"
       });
   }

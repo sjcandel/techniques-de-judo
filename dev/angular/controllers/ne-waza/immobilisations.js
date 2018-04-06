@@ -1,13 +1,4 @@
-app.filter("trustUrl", [
-  "$sce",
-  function($sce) {
-    return function(recordingUrl) {
-      return $sce.trustAsResourceUrl(recordingUrl);
-    };
-  }
-]);
-
-app.controller("newaza", [
+app.controller("immobilisations", [
   "$scope",
   function($scope) {
     $scope.openMenu = function() {
@@ -25,73 +16,73 @@ app.controller("newaza", [
     $scope.videos = [
       {
         titre: "Hon gesa gatame",
-        categorie: "immobilisation",
         niveau: "blanche",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
         url:
           "https://player.vimeo.com/video/24396879?autoplay=1&title=0&byline=0&portrait=0",
-        poster: "sources/img/img.jpg"
+        poster: "sources/img/img.jpg",
+        file: "sources/file/file.pdf"
       },
       {
         titre: "Kata gatame",
-        categorie: "immobilisation",
         niveau: "jaune",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
         url:
           "https://player.vimeo.com/video/89357746?autoplay=1&color=ffffff&title=0&byline=0&portrait=0",
-        poster: "sources/img/img.jpg"
+        poster: "sources/img/img.jpg",
+        file: "sources/file/file.pdf"
       },
       {
         titre: "Kami shio gatame",
-        categorie: "immobilisation",
         niveau: "blanche",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
         url:
           "https://player.vimeo.com/video/24396879?autoplay=1&title=0&byline=0&portrait=0",
-        poster: "sources/img/img.jpg"
+        poster: "sources/img/img.jpg",
+        file: "sources/file/file.pdf"
       },
       {
         titre: "Tate shio gatame",
-        categorie: "immobilisation",
         niveau: "blanche",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
         url:
           "https://player.vimeo.com/video/24396879?autoplay=1&title=0&byline=0&portrait=0",
-        poster: "sources/img/img.jpg"
+        poster: "sources/img/img.jpg",
+        file: "sources/file/file.pdf"
       },
       {
         titre: "Yoko shio gatame",
-        categorie: "immobilisation",
         niveau: "blanche",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
         url:
           "https://player.vimeo.com/video/24396879?autoplay=1&title=0&byline=0&portrait=0",
-        poster: "sources/img/img.jpg"
+        poster: "sources/img/img.jpg",
+        file: "sources/file/file.pdf"
       },
       {
         titre: "Makura gesa gatame",
-        categorie: "immobilisation",
         niveau: "jaune",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
         url:
           "https://player.vimeo.com/video/24396879?autoplay=1&title=0&byline=0&portrait=0",
-        poster: "sources/img/img.jpg"
+        poster: "sources/img/img.jpg",
+        file: "sources/file/file.pdf"
       },
       {
         titre: "Ushiro gesa gatame",
-        categorie: "immobilisation",
         niveau: "jaune",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
         url:
           "https://player.vimeo.com/video/24396879?autoplay=1&title=0&byline=0&portrait=0",
-        poster: "sources/img/img.jpg"
+        poster: "sources/img/img.jpg",
+        file: "sources/file/file.pdf"
       }
     ];
 

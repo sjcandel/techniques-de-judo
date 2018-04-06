@@ -137,15 +137,25 @@ nav {
         right: 0;
         bottom: 0;
       }
-      &:hover {
-        img {
-          transform: scale(1.1);
-          transition: ease 0.5s;
-        }
-      }
     }
     &:hover {
       cursor: pointer;
+    }
+  }
+}
+
+.videoGrid__cover {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 87%;
+  z-index: 10;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0);
+    transition: ease 0.5s;
+    i {
+      transform: scale(1.5);
+      transition: ease 0.5s;
     }
   }
 }
