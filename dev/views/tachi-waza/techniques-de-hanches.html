@@ -12,4 +12,21 @@
     </div>
   </section>
 
+  <!-- PLAYLIST -->
+  <article class="m-t-40">
+    <div class="videoGrid flex-container">
+      <p ng-if="!videos[0]">WORK IN PROGRESS</p>
+      <a class="videoGrid__elt m-x-15 m-b-40" ng-repeat="v in videos" ng-click="showDetails(v)">
+        <div class="videoGrid__cover flex-container is-vertical-center is-horizontal-center">
+          <i class="far fa-play-circle text-xl text-white"></i>
+        </div>
+        <div class="videoGrid__img">
+
+          <img ng-src="{{v.poster}}">
+        </div>
+        <p class="p-t-10 text-grey2 uppercase weight-700">{{v.titre}}</p>
+      </a>
+    </div>
+  </article>
+
 </div>

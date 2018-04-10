@@ -122,12 +122,19 @@
         });
     */
 
+
+
+    // $("#menu ul li").click(function () {
+    //     var $frame = $('#immobilisations-iframe');
+    //     $frame.attr('src', '');
+    // })
+
+
+
     function windowSize() {
 
         if ($(window).width() <= 768) {
-            //console.log($(window).width());
             $("#menu").on("click", "li", function (event) {
-                //console.log('a');
                 $("#menu").css("left", "-80%");
                 $("#open-menu").css("display", "block");
                 $("#close-menu").css("display", "none");
