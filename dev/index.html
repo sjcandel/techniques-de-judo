@@ -22,6 +22,9 @@
 </head>
 
 <body class="flex-container">
+    <i class="fas fa-bars mobile text-orange" id="open-menu"></i>
+    <i class="fas fa-times mobile text-orange" id="close-menu"></i>
+
     <nav class="flex-1 p-40 text-white desktop" id="menu">
         <ul>
             <li class="m-y-30">
@@ -62,7 +65,6 @@
                 </ul>
             </li>
         </ul>
-
         <div class="separator"></div>
         <ul>
             <li>
@@ -96,6 +98,48 @@
 
 </body>
 
+<script>
+    $("#open-menu").click(function () {
+        $("#menu").css("left", "0");
+        $("#open-menu").css("display", "none");
+        $("#close-menu").css("display", "block");
+    });
+    $("#close-menu").click(function () {
+        $("#menu").css("left", "-80%");
+        $("#open-menu").css("display", "block");
+        $("#close-menu").css("display", "none");
+    });
 
+    /*
+        $(window).resize(function () {
+            if ($(window).width() <= 768) {
+                $("#menu").on("click", "li", function (event) {
+                    $("#menu").css("left", "-80%");
+                    $("#open-menu").css("display", "block");
+                    $("#close-menu").css("display", "none");
+                });
+            }
+        });
+    */
+
+    function windowSize() {
+
+        if ($(window).width() <= 768) {
+            //console.log($(window).width());
+            $("#menu").on("click", "li", function (event) {
+                //console.log('a');
+                $("#menu").css("left", "-80%");
+                $("#open-menu").css("display", "block");
+                $("#close-menu").css("display", "none");
+            });
+        }
+
+
+    }
+    windowSize();
+
+
+
+</script>
 
 </html>
