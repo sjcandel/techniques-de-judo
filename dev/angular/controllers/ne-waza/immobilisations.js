@@ -9,48 +9,16 @@ app.controller("immobilisations", [
         niveau: "blanche",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
-        url:
-          "https://player.vimeo.com/video/24396879?autoplay=1&title=0&byline=0&portrait=0",
-        poster: "sources/img/img.jpg",
-        file: "sources/file/file.pdf"
+        url: "",
+        poster: "sources/img/hongesagatame.jpg",
+        file: "sources/file/hongesagatame.pdf"
       },
       {
         titre: "Kata gatame",
         niveau: "jaune",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
-        url:
-          "https://player.vimeo.com/video/89357746?autoplay=1&color=ffffff&title=0&byline=0&portrait=0",
-        poster: "sources/img/img.jpg",
-        file: "sources/file/file.pdf"
-      },
-      {
-        titre: "Kami shio gatame",
-        niveau: "blanche",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
-        url:
-          "https://player.vimeo.com/video/24396879?autoplay=1&title=0&byline=0&portrait=0",
-        poster: "sources/img/img.jpg",
-        file: "sources/file/file.pdf"
-      },
-      {
-        titre: "Tate shio gatame",
-        niveau: "blanche",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
-        url:
-          "https://player.vimeo.com/video/24396879?autoplay=1&title=0&byline=0&portrait=0",
-        poster: "sources/img/img.jpg",
-        file: "sources/file/file.pdf"
-      },
-      {
-        titre: "Yoko shio gatame",
-        niveau: "blanche",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
-        url:
-          "https://player.vimeo.com/video/24396879?autoplay=1&title=0&byline=0&portrait=0",
+        url: "",
         poster: "sources/img/img.jpg",
         file: "sources/file/file.pdf"
       },
@@ -59,19 +27,8 @@ app.controller("immobilisations", [
         niveau: "jaune",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
-        url:
-          "https://player.vimeo.com/video/24396879?autoplay=1&title=0&byline=0&portrait=0",
-        poster: "sources/img/img.jpg",
-        file: "sources/file/file.pdf"
-      },
-      {
-        titre: "Ushiro gesa gatame",
-        niveau: "jaune",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
-        url:
-          "https://player.vimeo.com/video/24396879?autoplay=1&title=0&byline=0&portrait=0",
-        poster: "sources/img/img.jpg",
+        url: "",
+        poster: "sources/img/makuragesagatame.jpg",
         file: "sources/file/file.pdf"
       }
     ];
