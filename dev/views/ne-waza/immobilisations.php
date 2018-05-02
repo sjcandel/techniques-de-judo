@@ -1,7 +1,7 @@
 <?php 
     $title = "Immobilisations - Techniques de Judo";
     $ogTitle = "Immobilisations - Techniques de Judo";
-    $ogType = "video";
+    $ogType = "video.other";
     $ogUrl = $_SERVER['REQUEST_URI'];
     $ogImage = " ";
     include('../../includes/header.php');
