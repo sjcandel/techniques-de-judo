@@ -1,16 +1,23 @@
-<div class="animated fadeInRight">
-  <!-- <i class="fas fa-bars mobile text-orange" id="open-menu" ng-click="openMenu()"></i>
-  <i class="fas fa-times mobile text-orange" id="close-menu" ng-click="closeMenu()"></i> -->
+<?php 
+    $title = "Retournements - Techniques de Judo";
+    $ogTitle = "Retournements - Techniques de Judo";
+    $ogType = "video";
+    $ogUrl = $_SERVER['REQUEST_URI'];;
+    $ogImage = " ";
+    include('../../includes/header.php');
+    include('../../includes/nav.php');
+?>
 
-
+<section class="animated fadeInRight"  ng-controller="retournements">
+  
 
   <!-- PLAYER -->
-  <section>
+  <article>
     <div class="m-x-15">
-      <h1 class="text-grey2 text-xxl uppercase weight-700">Etranglements</h1>
-      <h2 class="subtitle text-xl p-l-40">shime-waza</h2>
+      <h1 class="text-grey2 text-xxl uppercase weight-700">Retournements</h1>
+      <h2 class="subtitle text-xl p-l-40">ne-waza</h2>
     </div>
-  </section>
+  </article>
 
   <!-- PLAYLIST -->
   <article class="m-t-40">
@@ -29,4 +36,7 @@
     </div>
   </article>
 
-</div>
+</section>
+
+
+<?php include('../../includes/footer.php'); ?>

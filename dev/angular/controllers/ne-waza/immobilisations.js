@@ -1,35 +1,62 @@
 app.controller("immobilisations", [
   "$scope",
   function($scope) {
-    //$scope.openMenu();
-
     $scope.videos = [
       {
-        titre: "Hon gesa gatame",
+        titre: "Hon Gesa Gatame",
         niveau: "blanche",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
+        description: "",
         url: "",
-        poster: "sources/img/hongesagatame.jpg",
-        file: "sources/file/hongesagatame.pdf"
+        poster: "../../sources/img/hongesagatame.jpg",
+        file: "../../sources/file/hongesagatame.pdf"
       },
       {
-        titre: "Kata gatame",
+        titre: "Kata Gatame",
         niveau: "jaune",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
+        description: "",
         url: "",
-        poster: "sources/img/img.jpg",
-        file: "sources/file/file.pdf"
+        poster: "../../sources/img/katagatame.jpg",
+        file: "../../sources/file/katagatame.pdf"
       },
       {
-        titre: "Makura gesa gatame",
-        niveau: "jaune",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a nisi consectetur, luctus mi in, pulvinar ipsum. Nunc ipsum nisi, tempor at sapien id, ornare posuere tellus. ",
+        titre: "Kami Shiho Gatame",
+        niveau: "blanche",
+        description: "",
         url: "",
-        poster: "sources/img/makuragesagatame.jpg",
-        file: "sources/file/file.pdf"
+        poster: "../../sources/img/kamishihogatame.jpg",
+        file: "../../sources/file/kamishihogatame.pdf"
+      },
+      {
+        titre: "Makura Gesa Gatame",
+        niveau: "jaune",
+        description: "",
+        url: "",
+        poster: "../../sources/img/makuragesagatame.jpg",
+        file: "../../sources/file/makuragesagatame.pdf"
+      },
+      {
+        titre: "Tate Shiho Gatame",
+        niveau: "blanche",
+        description: "",
+        url: "",
+        poster: "../../sources/img/tateshihogatame.jpg",
+        file: "../../sources/file/tateshihogatame.pdf"
+      },
+      {
+        titre: "Ushiro Gesa Gatame",
+        niveau: "blanche",
+        description: "",
+        url: "",
+        poster: "../../sources/img/ushirogesagatame.jpg",
+        file: "../../sources/file/ushirogesagatame.pdf"
+      },
+      {
+        titre: "Yoko Shiho Gatame",
+        niveau: "blanche",
+        description: "",
+        url: "",
+        poster: "../../sources/img/yokoshihogatame.jpg",
+        file: "../../sources/file/yokoshihogatame.pdf"
       }
     ];
 

@@ -1,14 +1,20 @@
+<?php 
+    $title = "Techniques de hanches - Techniques de Judo";
+    $ogTitle = "Techniques de hanches - Techniques de Judo";
+    $ogType = "video";
+    $ogUrl = $_SERVER['REQUEST_URI'];
+    $ogImage = " ";
+    include('../../includes/header.php');
+    include('../../includes/nav.php');
+?>
+
 <div class="animated fadeInRight">
-  <!-- <i class="fas fa-bars mobile text-orange" id="open-menu" ng-click="openMenu()"></i>
-  <i class="fas fa-times mobile text-orange" id="close-menu" ng-click="closeMenu()"></i> -->
-
-
 
   <!-- PLAYER -->
   <section>
     <div class="m-x-15">
-      <h1 class="text-grey2 text-xxl uppercase weight-700">Techniques de jambes</h1>
-      <h2 class="subtitle text-xl p-l-40">ashi-waza</h2>
+      <h1 class="text-grey2 text-xxl uppercase weight-700">Techniques de hanche</h1>
+      <h2 class="subtitle text-xl p-l-40">kochi-waza</h2>
     </div>
   </section>
 
@@ -30,3 +36,5 @@
   </article>
 
 </div>
+
+<?php include('../../includes/footer.php'); ?>
